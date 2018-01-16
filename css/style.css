@@ -1,0 +1,32 @@
+.timeline{
+  width: 100%;
+  min-width: 200px;
+}
+
+.timeline-period{
+  width: 10%;
+  background-color: #808080;
+  border-right: 1px solid #222222;
+  height: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.timeline-event-teamA{
+  width: 5px;
+  height: 5px;
+  background-color: blue;
+  position: absolute;
+  top: -5px;
+}
+
+.timeline-event-teamB{
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  display: table-column;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}

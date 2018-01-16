@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="timelineApp">
+<head>
+  <title ng-bind="title"></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- build:css /css/style.min.css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- endbuild -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+  <script src="js/timelinecontroller.js"></script>
+
+</head>
+
+<body ng-controller="timelineController">
+  <h1>Test</h1>
+  <input type="number" ng-model="newAction.timeinseconds"></input>
+  <input type="number" ng-model="newAction.team"></input>
+  <button type="button" name="button" ng-click="addAction(newAction.timeinseconds, newAction.team)">Add event</button>
+
+  <br>
+  <div id="timeline" class="timeline">
+    <div id="{{$index}}" ng-repeat="timelineitem in timelinelist" class="timeline-period">
+
+    </div>
+  </div>
+
+</body>
+
+</html>
